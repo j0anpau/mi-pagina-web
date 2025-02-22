@@ -51,6 +51,20 @@
             z-index: 1;
         }
 
+        /* Imagen de perfil redonda con más zoom */
+        /* Imagen de perfil redonda con zoom centrado */
+        .profile-pic {
+            width: 150px; /* Tamaño del círculo */
+            height: 150px;
+            border-radius: 50%; /* Hace la imagen circular */
+            object-fit: cover; /* Ajusta la imagen dentro del círculo */
+            object-position: center; /* Centra la imagen */
+            transform: scale(1.5); /* Aumenta el zoom */
+            border: 3px solid white; /* Borde blanco opcional */
+            display: block;
+            margin: 0 auto 10px auto; /* Centra la imagen y da espacio abajo */
+        }
+            
         /* Título */
         h1 {
             font-size: 3rem;
@@ -112,6 +126,7 @@
     <div class="overlay"></div>
 
     <div class="container">
+        <img src="foto-profile.jpeg" alt="Foto de Joan Pau" class="profile-pic">
         <h1>Joan Pau Gutiérrez Pascual</h1>
         <h2>Ingeniero | Data Scientist | PhD Candidate</h2>
 
